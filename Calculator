@@ -1,0 +1,25 @@
+x = int(input("Please input first number: "))
+y = int(input("Please input second numbe: "))
+
+operator = str(input("Please enter operator(+,-,*,/,^,%,//): "))
+contin = "y"
+while contin == "y":
+  if operator  == "+":
+    ans = (x+y)
+  elif operator == "-":  
+    ans =  (x-y)
+  elif operator == "*":  
+    ans =  (x*y)
+  elif operator == "/":  
+    ans = (x/y)
+  elif operator == "^":  
+    ans = (x**y)
+  elif operator == "%":  
+    ans = (x%y)
+  elif operator == "//":  
+    ans = (x//y)
+  else:
+    print("invalid operator")
+  print("Answer is : ",ans)
+  contin = str(input("press Y continue")).lower()
+  operator = str(input("Please enter operator(+,-,*,/,^,%,//): "))
